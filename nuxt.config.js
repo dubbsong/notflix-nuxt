@@ -21,6 +21,7 @@ export default {
       },
     ],
   },
+  loading: '~/components/Loading.vue',
   css: ['~/assets/scss/index.scss'],
   plugins: [],
   buildModules: ['@nuxtjs/eslint-module'],
