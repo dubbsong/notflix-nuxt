@@ -21,7 +21,7 @@ export default {
       },
     ],
   },
-  css: [],
+  css: ['~/assets/scss/index.scss'],
   plugins: [],
   buildModules: ['@nuxtjs/eslint-module'],
   modules: ['nuxt-buefy', '@nuxtjs/axios'],
