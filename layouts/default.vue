@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <!-- Header -->
+    <Header />
 
     <!-- Main -->
     <div id="main" role="main">
@@ -12,6 +13,16 @@
     <!-- NavMobile -->
   </div>
 </template>
+
+<script>
+import Header from '~/components/Header'
+
+export default {
+  components: {
+    Header,
+  },
+}
+</script>
 
 <style lang="scss">
 #app {
