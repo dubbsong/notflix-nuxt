@@ -100,6 +100,10 @@ export default {
       }
 
       console.log('SUCCESS')
+
+      this.$store.dispatch('login', '1234-dummy-JWT-token-5678')
+      this.$store.commit('checkJwt', true)
+      this.$router.push('/my-list')
     },
   },
 }
