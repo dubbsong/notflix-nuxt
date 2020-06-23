@@ -1,17 +1,16 @@
 <template>
-  <div id="about">
+  <div id="my-list">
     <!-- Title -->
     <section class="section">
       <div class="container">
-        <h3>About</h3>
+        <h3>My List</h3>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- Table -->
     <section class="section">
       <div class="container">
-        <!-- info -->
-        <h4>오많배</h4>
+        <h4>Table</h4>
       </div>
     </section>
   </div>
