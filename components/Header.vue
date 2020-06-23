@@ -9,8 +9,8 @@
           </nuxt-link>
         </li>
         <li class="is-hidden-mobile">
-          <nuxt-link to="/">
-            Home
+          <nuxt-link to="/about">
+            About
           </nuxt-link>
         </li>
         <li class="is-hidden-mobile">
@@ -26,11 +26,6 @@
         <li class="is-hidden-mobile">
           <nuxt-link to="/my-list">
             My List
-          </nuxt-link>
-        </li>
-        <li class="is-hidden-mobile">
-          <nuxt-link to="/test">
-            Test
           </nuxt-link>
         </li>
       </ul>
