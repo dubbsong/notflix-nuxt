@@ -18,7 +18,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Ubuntu&family=Nanum+Gothic+Coding&display=swap',
+          'https://fonts.googleapis.com/css2?family=Blinker&family=Nanum+Gothic+Coding&display=swap',
       },
     ],
   },
