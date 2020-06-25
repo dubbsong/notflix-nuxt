@@ -37,12 +37,12 @@
             <b-icon icon="magnify" />
           </nuxt-link>
         </li>
-        <li>
+        <li v-show="!$store.state.checkJwt">
           <nuxt-link to="/login">
             <b-icon icon="login-variant" />
           </nuxt-link>
         </li>
-        <li>
+        <li v-show="$store.state.checkJwt">
           <b-dropdown position="is-bottom-left">
             <a slot="trigger" role="button">
               <b-icon icon="account-circle" />
@@ -93,7 +93,9 @@ export default {
   mounted() {},
   methods: {
     handleLogout() {
-      console.log('Handle Logout')
+      this.$store.dispatch('logout')
+      this.$store.commit('checkJwt', false)
+      this.$router.push('/login')
     },
   },
 }
