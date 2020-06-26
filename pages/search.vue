@@ -2,30 +2,26 @@
   <div id="search">
     <!-- Search -->
     <section class="section">
-      <div class="container">
-        <h3>Search</h3>
+      <h3>Search</h3>
 
-        <b-field>
-          <b-input
-            v-model="searchWord"
-            type="search"
-            icon="magnify"
-            placeholder="Search Movie or TV show"
-            icon-clickable
-            @icon-click="handleSearch"
-            @keyup.native.enter="handleSearch"
-          ></b-input>
-        </b-field>
-      </div>
+      <b-field>
+        <b-input
+          v-model="searchWord"
+          type="search"
+          icon="magnify"
+          placeholder="Search Movie or TV show"
+          icon-clickable
+          @icon-click="handleSearch"
+          @keyup.native.enter="handleSearch"
+        ></b-input>
+      </b-field>
     </section>
 
     <!-- Result -->
     <section class="section">
-      <div class="container">
-        <p>
-          Related to: <b>{{ related }}</b>
-        </p>
-      </div>
+      <p>
+        Related to: <b>{{ related }}</b>
+      </p>
     </section>
 
     <!-- alertModal -->
@@ -68,10 +64,8 @@ export default {
 <style lang="scss" scoped>
 #search {
   section {
-    .container {
-      h3 {
-        margin-bottom: 16px;
-      }
+    h3 {
+      margin-bottom: 16px;
     }
   }
 }

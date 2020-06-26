@@ -2,17 +2,13 @@
   <div id="about">
     <!-- Title -->
     <section class="section">
-      <div class="container">
-        <h3>About</h3>
-      </div>
+      <h3>About</h3>
     </section>
 
     <!-- About -->
     <section class="section">
-      <div class="container">
-        <!-- info -->
-        <h4>오많배</h4>
-      </div>
+      <!-- info -->
+      <h4>오많배</h4>
     </section>
   </div>
 </template>

@@ -2,9 +2,7 @@
   <div id="tv">
     <!-- Title -->
     <section class="section">
-      <div class="container">
-        <h3>TV Shows</h3>
-      </div>
+      <h3>TV Shows</h3>
     </section>
 
     <!-- Popular -->

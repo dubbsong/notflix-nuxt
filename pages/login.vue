@@ -1,57 +1,55 @@
 <template>
   <div id="login">
     <section class="section">
-      <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <!-- head -->
-            <div class="head">
-              <img src="~/assets/img/logo.png" alt="logo" width="120" />
-              <h4>LOGIN</h4>
-            </div>
+      <div class="card">
+        <div class="card-content">
+          <!-- head -->
+          <div class="head">
+            <img src="~/assets/img/logo.png" alt="logo" width="120" />
+            <h4>LOGIN</h4>
+          </div>
 
-            <!-- hr -->
-            <hr />
+          <!-- hr -->
+          <hr />
 
-            <!-- info -->
-            <div class="info">
-              <h6>Please enter ID and Password below.</h6>
-              <p><b>ID:</b> user1</p>
-              <p><b>PW:</b> User12#</p>
-            </div>
+          <!-- info -->
+          <div class="info">
+            <h6>Please enter ID and Password below.</h6>
+            <p><b>ID:</b> user1</p>
+            <p><b>PW:</b> User12#</p>
+          </div>
 
-            <!-- hr -->
-            <hr />
+          <!-- hr -->
+          <hr />
 
-            <!-- form -->
-            <div class="form">
-              <!-- ID -->
-              <b-field label="ID" label-position="on-border">
-                <b-input
-                  v-model="userId"
-                  type="text"
-                  placeholder="Please enter your ID"
-                  @keyup.native.enter="handleSubmit"
-                ></b-input>
-              </b-field>
+          <!-- form -->
+          <div class="form">
+            <!-- ID -->
+            <b-field label="ID" label-position="on-border">
+              <b-input
+                v-model="userId"
+                type="text"
+                placeholder="Please enter your ID"
+                @keyup.native.enter="handleSubmit"
+              ></b-input>
+            </b-field>
 
-              <!-- PW -->
-              <b-field label="Password" label-position="on-border">
-                <b-input
-                  v-model="userPassword"
-                  type="password"
-                  placeholder="Please enter your password"
-                  @keyup.native.enter="handleSubmit"
-                ></b-input>
-              </b-field>
-            </div>
+            <!-- PW -->
+            <b-field label="Password" label-position="on-border">
+              <b-input
+                v-model="userPassword"
+                type="password"
+                placeholder="Please enter your password"
+                @keyup.native.enter="handleSubmit"
+              ></b-input>
+            </b-field>
+          </div>
 
-            <!-- submit -->
-            <div class="submit">
-              <b-button class="button btn-black" expanded @click="handleSubmit">
-                LOGIN
-              </b-button>
-            </div>
+          <!-- submit -->
+          <div class="submit">
+            <b-button class="button btn-black" expanded @click="handleSubmit">
+              LOGIN
+            </b-button>
           </div>
         </div>
       </div>
@@ -117,40 +115,38 @@ export default {
     justify-content: center;
     align-items: center;
 
-    .container {
-      .card {
-        width: 400px;
-        margin: 0 auto;
+    .card {
+      width: 400px;
+      margin: 0 auto;
 
-        .card-content {
-          text-align: center;
-          padding: 2rem 3rem;
+      .card-content {
+        text-align: center;
+        padding: 2rem 3rem;
 
-          /* head */
-          .head {
-            img {
-              margin-bottom: 16px;
-            }
+        /* head */
+        .head {
+          img {
+            margin-bottom: 16px;
           }
-
-          /* info */
-          .info {
-            h6 {
-              margin-bottom: 8px;
-            }
-          }
-
-          /* form */
-          .form {
-            margin-bottom: 40px;
-
-            .field {
-              margin-bottom: 24px;
-            }
-          }
-
-          /* submit */
         }
+
+        /* info */
+        .info {
+          h6 {
+            margin-bottom: 8px;
+          }
+        }
+
+        /* form */
+        .form {
+          margin-bottom: 40px;
+
+          .field {
+            margin-bottom: 24px;
+          }
+        }
+
+        /* submit */
       }
     }
   }
@@ -159,13 +155,11 @@ export default {
 @media (max-width: 768px) {
   #login {
     section {
-      .container {
-        .card {
-          width: 100%;
+      .card {
+        width: 100%;
 
-          .card-content {
-            padding: 1.5rem;
-          }
+        .card-content {
+          padding: 1.5rem;
         }
       }
     }

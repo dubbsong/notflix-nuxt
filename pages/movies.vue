@@ -2,9 +2,7 @@
   <div id="movies">
     <!-- Title -->
     <section class="section">
-      <div class="container">
-        <h3>Movies</h3>
-      </div>
+      <h3>Movies</h3>
     </section>
 
     <!-- Popular -->

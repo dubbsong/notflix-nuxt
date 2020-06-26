@@ -2,16 +2,12 @@
   <div id="my-list">
     <!-- Title -->
     <section class="section">
-      <div class="container">
-        <h3>My List</h3>
-      </div>
+      <h3>My List</h3>
     </section>
 
     <!-- Table -->
     <section class="section">
-      <div class="container">
-        <h4>Table</h4>
-      </div>
+      <h4>Table</h4>
     </section>
   </div>
 </template>

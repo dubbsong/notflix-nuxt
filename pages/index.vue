@@ -2,9 +2,7 @@
   <div id="home">
     <!-- Title -->
     <section class="section">
-      <div class="container">
-        <h3>Home</h3>
-      </div>
+      <h3>Home</h3>
     </section>
 
     <!-- My List -->
