@@ -58,6 +58,16 @@ export default {
       this.searchWord = ''
     },
   },
+  head: () => ({
+    title: 'Notflix Search',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Notflix Search',
+      },
+    ],
+  }),
 }
 </script>
 
