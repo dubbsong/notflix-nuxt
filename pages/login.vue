@@ -104,6 +104,16 @@ export default {
       this.$router.push('/my-list')
     },
   },
+  head: () => ({
+    title: 'Notflix Login',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Notflix Login',
+      },
+    ],
+  }),
 }
 </script>
 

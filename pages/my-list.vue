@@ -1,6 +1,6 @@
 <template>
   <div id="my-list">
-    <!-- Title -->
+    <!-- Billboard -->
     <section class="section">
       <h3>My List</h3>
     </section>
@@ -15,5 +15,15 @@
 <script>
 export default {
   middleware: 'auth',
+  head: () => ({
+    title: 'Notflix My List',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Notflix My List',
+      },
+    ],
+  }),
 }
 </script>
