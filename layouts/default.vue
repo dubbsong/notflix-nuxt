@@ -12,17 +12,20 @@
     <Footer class="is-hidden-mobile" />
 
     <!-- NavMobile -->
+    <NavMobile class="is-hidden-tablet" />
   </div>
 </template>
 
 <script>
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
+import NavMobile from '~/components/NavMobile'
 
 export default {
   components: {
     Header,
     Footer,
+    NavMobile,
   },
 }
 </script>
