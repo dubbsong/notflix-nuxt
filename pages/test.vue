@@ -33,7 +33,7 @@ export default {
   }),
   methods: {
     checkJwt() {
-      alert(sessionStorage.getItem('jwt'))
+      alert(this.$cookies.get('jwt'))
     },
   },
   head: () => ({

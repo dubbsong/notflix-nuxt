@@ -4,7 +4,7 @@
     <div class="left">
       <p>© 2020</p>
       <a href="https://dubbsong.github.io" target="_blank">
-        ㅇㅁㅂ
+        오많배
       </a>
     </div>
 

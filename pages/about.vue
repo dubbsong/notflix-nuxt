@@ -1,6 +1,6 @@
 <template>
   <div id="about">
-    <!-- Title -->
+    <!-- Page title -->
     <section class="section">
       <h3>About</h3>
     </section>
@@ -12,3 +12,18 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  head: () => ({
+    title: 'Notflix About',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Notflix About',
+      },
+    ],
+  }),
+}
+</script>
