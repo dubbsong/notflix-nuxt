@@ -1,5 +1,5 @@
-export default function ({ store, redirect }) {
-  if (store.state.checkJwt === false) {
+export default function ({ app, redirect }) {
+  if (app.$cookies.get('jwt') === undefined) {
     redirect('/login')
   }
 }

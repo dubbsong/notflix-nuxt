@@ -7,6 +7,7 @@ export const state = () => ({
 // for tracking state change (Synchronous)
 export const mutations = {
   setToken(state, payload) {
+    this.$cookies.set('jwt', payload)
     state.jwt = payload
   },
   removeToken(state, payload) {
@@ -20,11 +21,10 @@ export const mutations = {
 // for update like methods (Asynchronous)
 export const actions = {
   login({ commit }, jwt) {
-    sessionStorage.setItem('jwt', jwt)
     commit('setToken', jwt)
   },
   logout({ commit }) {
-    sessionStorage.removeItem('jwt')
+    this.$cookies.remove('jwt')
     commit('removeToken')
   },
 }

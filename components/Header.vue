@@ -106,7 +106,7 @@
 <script>
 export default {
   mounted() {
-    if (sessionStorage.getItem('jwt') !== null) {
+    if (this.$cookies.get('jwt') !== undefined) {
       this.$store.commit('checkJwt', true)
     }
   },

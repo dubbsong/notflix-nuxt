@@ -18,7 +18,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          'https://fonts.googleapis.com/css2?family=Blinker&family=Nanum+Gothic+Coding&display=swap',
+          'https://fonts.googleapis.com/css2?family=Blinker&family=Noto+Sans+KR&display=swap',
       },
     ],
   },
@@ -26,7 +26,7 @@ export default {
   css: ['~/assets/scss/index.scss'],
   plugins: [],
   buildModules: ['@nuxtjs/eslint-module'],
-  modules: ['nuxt-buefy', '@nuxtjs/axios'],
+  modules: ['nuxt-buefy', '@nuxtjs/axios', 'cookie-universal-nuxt'],
   axios: {},
   build: {},
 }
