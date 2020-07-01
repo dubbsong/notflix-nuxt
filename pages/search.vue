@@ -18,10 +18,11 @@
     </section>
 
     <!-- Result -->
-    <section class="section">
-      <p>
-        Related to: <b>{{ related }}</b>
-      </p>
+    <section v-show="related !== ''" class="section">
+      <div class="result">
+        <h6>Explore titles related to:</h6>
+        <h4>{{ related }}</h4>
+      </div>
     </section>
 
     <!-- alertModal -->
@@ -76,6 +77,16 @@ export default {
   section {
     h3 {
       margin-bottom: 16px;
+    }
+
+    .result {
+      display: flex;
+      align-items: center;
+
+      h6 {
+        font-weight: normal;
+        margin-right: 8px;
+      }
     }
   }
 }
