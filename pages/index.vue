@@ -59,12 +59,53 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data: () => ({
     trendingMovies: [],
     trendingTVShows: [],
   }),
-  methods: {},
+  mounted() {
+    this.getTrendingMovies()
+    this.getTrendingTVShows()
+  },
+  methods: {
+    // Trending Movies
+    getTrendingMovies() {
+      const params = [
+        'api_key=b1aff257ceb0cbcdd236cef217694a61',
+        'language=en-US',
+      ].join('&')
+
+      axios
+        .get(`https://api.themoviedb.org/3/trending/movie/week?${params}`)
+        .then(({ data }) => {
+          this.trendingMovies = data.results
+        })
+        .catch((error) => {
+          this.trendingMovies = []
+          throw error
+        })
+    },
+    // Trending TV Shows
+    getTrendingTVShows() {
+      const params = [
+        'api_key=b1aff257ceb0cbcdd236cef217694a61',
+        'language=en-US',
+      ].join('&')
+
+      axios
+        .get(`https://api.themoviedb.org/3/trending/tv/week?${params}`)
+        .then(({ data }) => {
+          this.trendingTVShows = data.results
+        })
+        .catch((error) => {
+          this.trendingTVShows = []
+          throw error
+        })
+    },
+  },
   head: () => ({
     title: 'Notflix Home',
     meta: [
