@@ -6,7 +6,7 @@
           <!-- head -->
           <div class="head">
             <img src="~/assets/img/logo.png" alt="logo" width="120" />
-            <h4>LOGIN</h4>
+            <h4>Login</h4>
           </div>
 
           <!-- hr -->
@@ -15,8 +15,8 @@
           <!-- info -->
           <div class="info">
             <h6>Please enter ID and Password below.</h6>
-            <p><b>ID:</b> user1</p>
-            <p><b>PW:</b> User12#</p>
+            <p>ID: <b>user1</b></p>
+            <p>PW: <b>User12#</b></p>
           </div>
 
           <!-- hr -->
@@ -48,7 +48,7 @@
           <!-- submit -->
           <div class="submit">
             <b-button class="button btn-black" expanded @click="handleSubmit">
-              LOGIN
+              Login
             </b-button>
           </div>
         </div>
