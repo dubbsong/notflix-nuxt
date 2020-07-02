@@ -197,12 +197,11 @@ export default {
         })
     },
     moveToDetail(val) {
-      // if (val.title) {
-      //   this.$router.push(`/movie/${val.id}`)
-      // } else {
-      //   this.$router.push(`/tv/${val.id}`)
-      // }
-      console.log(val.id)
+      if (val.title) {
+        this.$router.push(`/movie/${val.id}`)
+      } else {
+        this.$router.push(`/tv/${val.id}`)
+      }
     },
   },
   head: () => ({
