@@ -18,7 +18,7 @@
 
     <!-- TV Shows -->
     <div class="item">
-      <nuxt-link to="/tv">
+      <nuxt-link to="/tv-shows">
         <b-icon icon="television-classic" />
         <p>TV Shows</p>
       </nuxt-link>

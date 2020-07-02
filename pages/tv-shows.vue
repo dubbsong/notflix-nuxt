@@ -1,5 +1,5 @@
 <template>
-  <div id="tv">
+  <div id="tv-shows">
     <!-- Billboard -->
     <section class="section">
       <h3>TV Shows</h3>

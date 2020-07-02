@@ -25,7 +25,7 @@
 
       <!-- tv shows -->
       <li class="is-hidden-mobile">
-        <nuxt-link to="/tv">
+        <nuxt-link to="/tv-shows">
           TV Shows
         </nuxt-link>
       </li>
