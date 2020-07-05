@@ -122,7 +122,7 @@ export default {
 
 <style lang="scss" scoped>
 header {
-  background-color: #141414;
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -148,7 +148,7 @@ header {
         align-items: center;
         font-size: 14px;
         font-weight: bold;
-        color: #b3b3b3;
+        color: rgba(255, 255, 255, 0.8);
         transition: all 0.2s ease-in-out;
 
         &.nuxt-link-exact-active {

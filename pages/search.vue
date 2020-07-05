@@ -242,7 +242,13 @@ export default {
 
 <style lang="scss" scoped>
 #search {
+  padding-top: 100px;
+
   section {
+    &:first-child {
+      margin-bottom: 24px;
+    }
+
     h3 {
       margin-bottom: 8px;
     }

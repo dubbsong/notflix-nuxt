@@ -120,10 +120,11 @@ export default {
 <style lang="scss" scoped>
 #login {
   section {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 72px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 68px;
 
     .card {
       width: 400px;

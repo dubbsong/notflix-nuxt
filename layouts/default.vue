@@ -33,10 +33,9 @@ export default {
 <style lang="scss">
 #app {
   #main {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 72px);
     background-color: #141414;
     color: #fff;
-    margin-top: 68px;
   }
 }
 

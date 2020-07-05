@@ -27,3 +27,9 @@ export default {
   }),
 }
 </script>
+
+<style lang="scss" scoped>
+#my-list {
+  padding-top: 100px;
+}
+</style>
