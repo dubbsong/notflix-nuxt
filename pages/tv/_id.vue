@@ -71,3 +71,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+#tv {
+  padding-top: 100px;
+}
+</style>

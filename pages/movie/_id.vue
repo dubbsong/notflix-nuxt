@@ -69,3 +69,9 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+#movie {
+  padding-top: 100px;
+}
+</style>
