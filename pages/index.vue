@@ -1,9 +1,56 @@
 <template>
   <div id="home">
     <!-- Billboard -->
-    <section class="section">
-      <h3>Home</h3>
-    </section>
+    <div class="billboard">
+      <!-- bg -->
+      <div
+        v-if="randomData"
+        class="bg"
+        :style="{
+          backgroundImage: `url(${backgroundUrl})`,
+          backgroundSize: 'cover',
+          height: '80vh',
+          backgroundPosition: 'top center',
+        }"
+      >
+        <div class="gradient"></div>
+      </div>
+
+      <!-- info -->
+      <div class="info">
+        <h3 v-if="randomData">
+          {{
+            randomData.title.length > 32
+              ? randomData.title.slice(0, 32) + '...'
+              : randomData.title
+          }}
+        </h3>
+        <h6 v-if="randomData">
+          {{
+            randomData.overview.length > 200
+              ? randomData.overview.slice(0, 200) + '...'
+              : randomData.overview
+          }}
+        </h6>
+
+        <div class="btns">
+          <b-button
+            icon-left="play"
+            class="button"
+            @click="moveToDetail(randomData)"
+          >
+            Play
+          </b-button>
+          <b-button
+            icon-left="plus"
+            class="button"
+            @click="addToList(randomData)"
+          >
+            Add to List
+          </b-button>
+        </div>
+      </div>
+    </div>
 
     <!-- My List -->
     <section v-show="$store.state.checkJwt" class="section">
@@ -157,6 +204,17 @@ export default {
     trendingTVShows: [],
     isDisabled: true,
   }),
+  computed: {
+    randomNumber() {
+      return Math.floor(Math.random() * this.trendingMovies.length)
+    },
+    randomData() {
+      return this.trendingMovies[this.randomNumber]
+    },
+    backgroundUrl() {
+      return 'https://image.tmdb.org/t/p/w500' + this.randomData.backdrop_path
+    },
+  },
   mounted() {
     this.getTrendingMovies()
     this.getTrendingTVShows()
@@ -203,6 +261,9 @@ export default {
         this.$router.push(`/tv/${val.id}`)
       }
     },
+    addToList(val) {
+      console.log(val)
+    },
   },
   head: () => ({
     title: 'Notflix Home',
@@ -219,6 +280,58 @@ export default {
 
 <style lang="scss" scoped>
 #home {
+  /* Billboard */
+  .billboard {
+    /* bg */
+    .bg {
+      position: relative;
+
+      .gradient {
+        background-image: linear-gradient(
+          180deg,
+          transparent,
+          rgba(40, 40, 40, 0.6),
+          rgba(20, 20, 20, 1)
+        );
+        height: 80vh;
+      }
+    }
+
+    /* info */
+    .info {
+      position: absolute;
+      top: 36%;
+      left: 0;
+      width: 40%;
+      height: 80vh;
+      padding: 5%;
+
+      .btns {
+        margin-top: 8px;
+
+        button {
+          width: 120px;
+          height: 36px;
+          background-color: rgba(51, 51, 51, 0.4);
+          color: #fff;
+          font-weight: bold;
+          letter-spacing: 1.5px;
+          border: none;
+          transition: all 0.2s ease-in-out;
+
+          &:first-child {
+            margin-right: 8px;
+          }
+
+          &:hover {
+            background-color: #e6e6e6;
+            color: #141414;
+          }
+        }
+      }
+    }
+  }
+
   section {
     /* title */
 
@@ -312,6 +425,17 @@ export default {
 
 @media (max-width: 768px) {
   #home {
+    /* Billboard */
+    .billboard {
+      /* bg */
+
+      /* info */
+      .info {
+        width: 100%;
+        top: 45%;
+      }
+    }
+
     section {
       padding: 1rem 1.5rem;
 
