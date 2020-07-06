@@ -30,5 +30,13 @@
     "ON_THE_AIR": "On The Air",
     "TOP_RATED": "Top Rated",
     "AIRING_TODAY": "Airing Today"
+  },
+  "SEARCH": {
+    "TITLE": "Search",
+    "EXPLORE_TITLES_RELATED_TO": "Explore titles related to:",
+    "PH_ENTER_KEYWORD": "Please enter keyword.",
+    "SUBTITLE_MOVIES": "Movies",
+    "SUBTITLE_TV_SHOWS": "TV Shows",
+    "NO_RESULTS": "No Results."
   }
 }

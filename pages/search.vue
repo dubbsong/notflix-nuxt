@@ -2,14 +2,14 @@
   <div id="search">
     <!-- Search -->
     <section class="section">
-      <h3>Search</h3>
+      <h3>{{ $t('SEARCH.TITLE') }}</h3>
 
       <b-field>
         <b-input
           v-model="searchWord"
           type="search"
           icon="magnify"
-          placeholder="Search for Movie or TV show"
+          :placeholder="$t('SEARCH.PH_ENTER_KEYWORD')"
           icon-clickable
           @icon-click="handleSearch"
           @keyup.native.enter="handleSearch"
@@ -17,7 +17,7 @@
       </b-field>
 
       <div v-show="related !== ''" class="related">
-        <h6>Explore titles related to:</h6>
+        <h6>{{ $t('SEARCH.EXPLORE_TITLES_RELATED_TO') }}</h6>
         <h4>{{ related }}</h4>
       </div>
     </section>
@@ -25,7 +25,7 @@
     <!-- Result Movies -->
     <section v-show="related !== ''" class="section">
       <!-- title -->
-      <h4>Movies</h4>
+      <h4>{{ $t('SEARCH.SUBTITLE_MOVIES') }}</h4>
 
       <!-- slider -->
       <div v-if="resultMovies.length" class="slider">
@@ -85,12 +85,17 @@
           </div>
         </div>
       </div>
+
+      <!-- No Results -->
+      <div v-else>
+        <p>{{ $t('SEARCH.NO_RESULTS') }}</p>
+      </div>
     </section>
 
     <!-- Result TV Shows -->
     <section v-show="related !== ''" class="section">
       <!-- title -->
-      <h4>TV Shows</h4>
+      <h4>{{ $t('SEARCH.SUBTITLE_TV_SHOWS') }}</h4>
 
       <!-- slider -->
       <div v-if="resultTVShows.length" class="slider">
@@ -149,6 +154,11 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- No Results -->
+      <div v-else>
+        <p>{{ $t('SEARCH.NO_RESULTS') }}</p>
       </div>
     </section>
 

@@ -30,5 +30,13 @@
     "ON_THE_AIR": "현재 방영 중인 TV 프로그램",
     "TOP_RATED": "가장 인기 있는 TV 프로그램",
     "AIRING_TODAY": "오늘 방영 TV 프로그램"
+  },
+  "SEARCH": {
+    "TITLE": "검색",
+    "EXPLORE_TITLES_RELATED_TO": "다음과 관련된 컨텐츠:",
+    "PH_ENTER_KEYWORD": "키워드를 입력해주세요.",
+    "SUBTITLE_MOVIES": "영화",
+    "SUBTITLE_TV_SHOWS": "TV 프로그램",
+    "NO_RESULTS": "결과가 없습니다."
   }
 }
