@@ -24,7 +24,10 @@ export default {
   },
   loading: '~/components/Loading.vue',
   css: ['~/assets/scss/index.scss'],
-  plugins: [],
+  router: {
+    middleware: 'i18n',
+  },
+  plugins: ['~/plugins/i18n.js'],
   buildModules: ['@nuxtjs/eslint-module'],
   modules: ['nuxt-buefy', '@nuxtjs/axios', 'cookie-universal-nuxt'],
   axios: {},

@@ -2,6 +2,8 @@
 export const state = () => ({
   jwt: null,
   checkJwt: false,
+  locales: ['en', 'ko'],
+  locale: 'en',
 })
 
 // for tracking state change (Synchronous)
@@ -15,6 +17,11 @@ export const mutations = {
   },
   checkJwt(state, payload) {
     state.checkJwt = payload
+  },
+  SET_LANG(state, locale) {
+    if (state.locales.includes(locale)) {
+      state.locale = locale
+    }
   },
 }
 

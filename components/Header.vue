@@ -12,32 +12,51 @@
       <!-- about -->
       <li class="is-hidden-mobile">
         <nuxt-link to="/about">
-          About
+          {{ $t('PAGE.ABOUT') }}
         </nuxt-link>
       </li>
 
       <!-- movies -->
       <li class="is-hidden-mobile">
         <nuxt-link to="/movies">
-          Movies
+          {{ $t('PAGE.MOVIES') }}
         </nuxt-link>
       </li>
 
       <!-- tv shows -->
       <li class="is-hidden-mobile">
         <nuxt-link to="/tv-shows">
-          TV Shows
+          {{ $t('PAGE.TV_SHOWS') }}
         </nuxt-link>
       </li>
 
       <!-- my list -->
       <li class="is-hidden-mobile">
         <nuxt-link to="/my-list">
-          My List
+          {{ $t('PAGE.MY_LIST') }}
         </nuxt-link>
       </li>
 
       <!-- i18n -->
+      <li>
+        <b-dropdown aria-role="list">
+          <a slot="trigger">
+            <template>
+              <span>{{ currentLocale === 'en' ? 'EN' : 'KO' }}</span>
+            </template>
+            <b-icon icon="menu-down"></b-icon>
+          </a>
+
+          <!-- en -->
+          <b-dropdown-item aria-role="listitem" @click="switchLanguage('en')">
+            <span>EN</span>
+          </b-dropdown-item>
+          <!-- ko -->
+          <b-dropdown-item aria-role="listitem" @click="switchLanguage('ko')">
+            <span>KO</span>
+          </b-dropdown-item>
+        </b-dropdown>
+      </li>
     </ul>
 
     <!-- Right -->
@@ -105,12 +124,24 @@
 
 <script>
 export default {
+  computed: {
+    currentLocale() {
+      return this.$cookies.get('locale')
+    },
+  },
   mounted() {
     if (this.$cookies.get('jwt') !== undefined) {
       this.$store.commit('checkJwt', true)
     }
   },
   methods: {
+    switchLanguage(locale) {
+      this.$cookies.set('locale', locale, {
+        path: '/',
+      })
+
+      window.location.reload(true)
+    },
     handleLogout() {
       this.$store.dispatch('logout')
       this.$store.commit('checkJwt', false)

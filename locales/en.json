@@ -1,0 +1,18 @@
+{
+  "PAGE": {
+    "HOME": "Home",
+    "ABOUT": "About",
+    "MOVIES": "Movies",
+    "TV_SHOWS": "TV Shows",
+    "MY_LIST": "My List",
+    "SEARCH": "Search",
+    "LOGIN": "Login",
+    "TEST": "Test"
+  },
+  "BUTTON": {
+    "CANCEL": "Cancel",
+    "CLOSE": "Close",
+    "CONFIRM": "Confirm",
+    "CHECK": "Check"
+  }
+}
