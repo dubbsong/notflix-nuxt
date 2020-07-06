@@ -21,7 +21,7 @@
         <!-- bottom -->
         <div class="bottom">
           <b-button class="button btn-black" expanded @click="close">
-            Confirm
+            {{ $t('BUTTON.CONFIRM') }}
           </b-button>
         </div>
       </div>
