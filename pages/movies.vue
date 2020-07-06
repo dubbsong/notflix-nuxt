@@ -55,7 +55,7 @@
     <!-- Popular -->
     <section class="section">
       <!-- title -->
-      <h4>Popular</h4>
+      <h4>{{ $t('MOVIES.POPULAR') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -117,7 +117,7 @@
     <!-- Now Playing -->
     <section class="section">
       <!-- title -->
-      <h4>Now Playing</h4>
+      <h4>{{ $t('MOVIES.NOW_PLAYING') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -179,7 +179,7 @@
     <!-- Upcoming -->
     <section class="section">
       <!-- title -->
-      <h4>Upcoming</h4>
+      <h4>{{ $t('MOVIES.UPCOMING') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -241,7 +241,7 @@
     <!-- Top Rated -->
     <section class="section">
       <!-- title -->
-      <h4>Top Rated</h4>
+      <h4>{{ $t('MOVIES.TOP_RATED') }}</h4>
 
       <!-- slider -->
       <div class="slider">

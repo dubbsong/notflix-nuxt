@@ -55,7 +55,7 @@
     <!-- Popular -->
     <section class="section">
       <!-- title -->
-      <h4>Popular</h4>
+      <h4>{{ $t('TV_SHOWS.POPULAR') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -117,7 +117,7 @@
     <!-- On The Air -->
     <section class="section">
       <!-- title -->
-      <h4>On The Air</h4>
+      <h4>{{ $t('TV_SHOWS.ON_THE_AIR') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -179,7 +179,7 @@
     <!-- Top Rated -->
     <section class="section">
       <!-- title -->
-      <h4>Top Rated</h4>
+      <h4>{{ $t('TV_SHOWS.TOP_RATED') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -241,7 +241,7 @@
     <!-- Airing Today -->
     <section class="section">
       <!-- title -->
-      <h4>Airing Today</h4>
+      <h4>{{ $t('TV_SHOWS.AIRING_TODAY') }}</h4>
 
       <!-- slider -->
       <div class="slider">
