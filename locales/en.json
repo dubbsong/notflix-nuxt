@@ -14,5 +14,21 @@
     "CLOSE": "Close",
     "CONFIRM": "Confirm",
     "CHECK": "Check"
+  },
+  "HOME": {
+    "TRENDING_NOW_MOVIES": "Trending Now Movies",
+    "TRENDING_NOW_TV_SHOWS": "Trending Now TV Shows"
+  },
+  "MOVIES": {
+    "POPULAR": "Popular",
+    "NOW_PLAYING": "Now Playing",
+    "UPCOMING": "Upcoming",
+    "TOP_RATED": "Top Rated"
+  },
+  "TV_SHOWS": {
+    "POPULAR": "Popular",
+    "ON_THE_AIR": "On The Air",
+    "TOP_RATED": "Top Rated",
+    "AIRING_TODAY": "Airing Today"
   }
 }

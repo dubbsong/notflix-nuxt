@@ -55,7 +55,7 @@
     <!-- My List -->
     <section v-show="$store.state.checkJwt" class="section">
       <!-- title -->
-      <h4>My List</h4>
+      <h4>{{ $t('PAGE.MY_LIST') }}</h4>
 
       <!-- data -->
       <b-collapse :open="false">
@@ -72,7 +72,7 @@
     <!-- Trending Now (Movies) -->
     <section class="section">
       <!-- title -->
-      <h4>Trending Now Movies</h4>
+      <h4>{{ $t('HOME.TRENDING_NOW_MOVIES') }}</h4>
 
       <!-- slider -->
       <div class="slider">
@@ -134,7 +134,7 @@
     <!-- Trending Now (TV Shows) -->
     <section class="section">
       <!-- title -->
-      <h4>Trending Now TV Shows</h4>
+      <h4>{{ $t('HOME.TRENDING_NOW_TV_SHOWS') }}</h4>
 
       <!-- slider -->
       <div class="slider">
