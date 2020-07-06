@@ -38,5 +38,17 @@
     "SUBTITLE_MOVIES": "Movies",
     "SUBTITLE_TV_SHOWS": "TV Shows",
     "NO_RESULTS": "No Results."
+  },
+  "LOGIN": {
+    "TITLE": "Login",
+    "TEXT_INFO": "Please enter ID and Password below.",
+    "TEXT_ID": "ID",
+    "TEXT_PW": "PW",
+    "LABEL_ID": "ID",
+    "ENTER_ID": "Please enter your ID",
+    "LABEL_PASSWORD": "Password",
+    "ENTER_PASSWORD": "Please enter your password",
+    "INCORRECT_ID_OR_PASSWORD": "Incorrect ID or Password",
+    "BUTTON_LOGIN": "Login"
   }
 }

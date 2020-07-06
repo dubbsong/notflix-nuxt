@@ -6,7 +6,7 @@
           <!-- head -->
           <div class="head">
             <img src="~/assets/img/logo.png" alt="logo" width="120" />
-            <h4>Login</h4>
+            <h4>{{ $t('LOGIN.TITLE') }}</h4>
           </div>
 
           <!-- hr -->
@@ -14,9 +14,9 @@
 
           <!-- info -->
           <div class="info">
-            <h6>Please enter ID and Password below.</h6>
-            <p>ID: <b>user1</b></p>
-            <p>PW: <b>User12#</b></p>
+            <h6>{{ $t('LOGIN.TEXT_INFO') }}</h6>
+            <p>{{ $t('LOGIN.TEXT_ID') }}: <b>user1</b></p>
+            <p>{{ $t('LOGIN.TEXT_PW') }}: <b>User12#</b></p>
           </div>
 
           <!-- hr -->
@@ -25,21 +25,24 @@
           <!-- form -->
           <div class="form">
             <!-- ID -->
-            <b-field label="ID" label-position="on-border">
+            <b-field :label="$t('LOGIN.LABEL_ID')" label-position="on-border">
               <b-input
                 v-model="userId"
                 type="text"
-                placeholder="Please enter your ID"
+                :placeholder="$t('LOGIN.ENTER_ID')"
                 @keyup.native.enter="handleSubmit"
               ></b-input>
             </b-field>
 
             <!-- PW -->
-            <b-field label="Password" label-position="on-border">
+            <b-field
+              :label="$t('LOGIN.LABEL_PASSWORD')"
+              label-position="on-border"
+            >
               <b-input
                 v-model="userPassword"
                 type="password"
-                placeholder="Please enter your password"
+                :placeholder="$t('LOGIN.ENTER_PASSWORD')"
                 @keyup.native.enter="handleSubmit"
               ></b-input>
             </b-field>
@@ -48,7 +51,7 @@
           <!-- submit -->
           <div class="submit">
             <b-button class="button btn-black" expanded @click="handleSubmit">
-              Login
+              {{ $t('LOGIN.BUTTON_LOGIN') }}
             </b-button>
           </div>
         </div>
@@ -81,23 +84,21 @@ export default {
     handleSubmit() {
       if (this.userId === '') {
         this.alertModal = true
-        this.alertModalTitle = 'Please enter your ID'
+        this.alertModalTitle = this.$t('LOGIN.ENTER_ID')
         return
       }
 
       if (this.userPassword === '') {
         this.alertModal = true
-        this.alertModalTitle = 'Please enter your password'
+        this.alertModalTitle = this.$t('LOGIN.ENTER_PASSWORD')
         return
       }
 
       if (this.userId !== 'user1' || this.userPassword !== 'User12#') {
         this.alertModal = true
-        this.alertModalTitle = 'Incorrect ID or Password'
+        this.alertModalTitle = this.$t('LOGIN.INCORRECT_ID_OR_PASSWORD')
         return
       }
-
-      console.log('SUCCESS')
 
       this.$store.dispatch('login', '1234-dummy-JWT-token-5678')
       this.$store.commit('checkJwt', true)
@@ -144,6 +145,7 @@ export default {
         /* info */
         .info {
           h6 {
+            font-size: 16px;
             margin-bottom: 8px;
           }
         }

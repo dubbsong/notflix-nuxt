@@ -38,5 +38,17 @@
     "SUBTITLE_MOVIES": "영화",
     "SUBTITLE_TV_SHOWS": "TV 프로그램",
     "NO_RESULTS": "결과가 없습니다."
+  },
+  "LOGIN": {
+    "TITLE": "로그인",
+    "TEXT_INFO": "아래의 아이디와 비밀번호를 입력해주세요.",
+    "TEXT_ID": "아이디",
+    "TEXT_PW": "비밀번호",
+    "LABEL_ID": "아이디",
+    "ENTER_ID": "아이디를 입력해주세요.",
+    "LABEL_PASSWORD": "비밀번호",
+    "ENTER_PASSWORD": "비밀번호를 입력해주세요.",
+    "INCORRECT_ID_OR_PASSWORD": "아이디 또는 비밀번호가 올바르지 않습니다.",
+    "BUTTON_LOGIN": "로그인"
   }
 }
