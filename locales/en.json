@@ -50,5 +50,8 @@
     "ENTER_PASSWORD": "Please enter your password",
     "INCORRECT_ID_OR_PASSWORD": "Incorrect ID or Password",
     "BUTTON_LOGIN": "Login"
+  },
+  "ERROR": {
+    "SUBTITLE": "This page could not be found"
   }
 }

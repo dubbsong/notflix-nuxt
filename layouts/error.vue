@@ -2,7 +2,7 @@
   <div id="not-found">
     <div>
       <h1>404 Not Found</h1>
-      <h4>This page could not be found</h4>
+      <h4>{{ $t('ERROR.SUBTITLE') }}</h4>
 
       <nuxt-link to="/">
         <b-icon icon="home" />
