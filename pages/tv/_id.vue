@@ -22,7 +22,7 @@
             icon-left="plus"
             class="button btn-black"
             style="margin-top: 24px;"
-            @click="addToList"
+            @click="addToList(tvData)"
           >
             Add to list
           </b-button>
@@ -65,8 +65,12 @@ export default {
           throw error
         })
     },
-    addToList() {
-      console.log('Add to list')
+    addToList(val) {
+      if (!this.$store.state.checkJwt) {
+        this.$router.push('/login')
+      } else {
+        console.log(val)
+      }
     },
   },
 }

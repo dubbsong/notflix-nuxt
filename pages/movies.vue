@@ -403,7 +403,11 @@ export default {
       this.$router.push(`/movie/${val.id}`)
     },
     addToList(val) {
-      console.log(val)
+      if (!this.$store.state.checkJwt) {
+        this.$router.push('/login')
+      } else {
+        console.log(val)
+      }
     },
   },
   head: () => ({
